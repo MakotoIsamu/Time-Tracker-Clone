@@ -5,49 +5,435 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/CSS FILES/HOMEPAGE.CSS">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-  <title>Document</title>
+  <title>TrackingTime</title>
 </head>
 <body>
-  <div class="main">
-    <div class="kkk">
-      <div class="section-1">
-        <div class="nav">
-          <img src="/ASSESTS/IMAGES/logo-full-color.svg" alt="logo">
-          <ul>
-            <li><a href="#">Integrations</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a class="try" href="#">Try it free</a></li>
-            <li><a class="Login" href="#">Login</a></li>
-          </ul>
-        </div>
-        <div class="hero-box">
-          <div class="text-box">
-            <h4>TRACKINGTIME TIME TRACKER SOFTWARE</h4>
-            <h1>Automatic Time Tracking <br> for Productive Teams</h1>
-            <p>Keeping your business running smoothly is our goal.<br>Focus on business growth while we handle the rest.</p>
-            <button class="get-started-btn">Get started <img src="/ASSESTS/IMAGES/arrow.svg"></button>
-            <button class="sign-in-google"><img src="/ASSESTS/IMAGES/google-workspace.png" >Sign in with Google</button>
+  <div class="wrapper">
+    <div class="nav-section">
+      <div class="content-wrapper">
+        <nav>
+          <div class="leftnav">
+            <img src="/ASSESTS/IMAGES/logo-full-color.svg" alt="logo">
           </div>
-          <div class="illustration-box">
-            <img src="/ASSESTS/IMAGES/vector-background-william.svg" alt="image">
+          <div class="rightnav">
+            <a href="https://trackingtime.co/integrations">Integrations</a>
+            <a href="https://trackingtime.co/blog">Blog</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Features</a>
+                <div class="dropdown-content">
+                    <a href="#">Time Tracker</a>
+                    <a href="#">Project Management</a>
+                    <a href="#">Online Timesheets</a>
+                    <a href="#">Time cards</a>
+                    <a href="#">Attendance tracking</a>
+                    <a href="#">Time reporting</a>
+                </div>
+            </div>
+            <a href="#" style="color: #EF6B6E;">Try it free</a>
+            <a href="https://pro.trackingtime.co/#" style="background: linear-gradient(90deg, #FF0031, transparent) #FF9E80; padding: 8px 28px; color: white; border-radius: 5px;">Login</a>
+        </div>
+        
+        </nav>
+      </div>
+    </div>
+    <section class="first-section">
+      <div class="content-wrapper">
+        <div class="first-child">
+          <div class="left-content">
+            <h5 class="red-para">
+              TRACKINGTIME TIME TRACKER SOFTWARE
+            </h5>
+            <h1 class="headings">
+              Automatic Time Tracking<br>
+              for Productive Teams
+            </h1>
+            <p class="para">
+              Keeping your business running smoothly is our goal .<br>
+              Focus on business growth while we handle the rest .
+            </p>
+            <button class="getStarted-btn">Get started <img src="/ASSESTS/IMAGES/arrow.svg"></button>
+            <div class="countinueWithGoogle-btn"><img src="/ASSESTS/IMAGES/google-workspace.png" alt="google-logo">Sign in with Google</div>
+          </div>
+          <div class="right-content">
+            <img src="/ASSESTS/IMAGES/vector-background-william.svg">
           </div>
         </div>
       </div>
-      <div class="mask"></div>
-    </div>
-    <div class="section-2"></div>
-    <div class="section-3">
-      <p class="para" >TIME TRACKER</p>
-      <h2 class="heading-two">A Complete Solution to Boost Team Performance</h2>
-      <h4>We handle time to help you keep on top of everything. Employees track work according to their style, you gather </h4>
-      <h4 class="gg">accurate information and gain valuable insights.</h4>
-      <div class="grid-container">
-        <div class="box"><img src="/ASSESTS/IMAGES/illustration-assets-flexible-time-tracker.png"><h2>Flexible time tracker</h2><p>Every team member can track their work time in a way that fits their style, whether they work at the office, on the field, or at home, part or full time, by the hour or by project.</p></div>
-        <div class="box"><img src="/ASSESTS/IMAGES/illustration-assets-user-reports.png"><h2>Accurate time reports</h2><p>Seamless time tracking that allows you to gather accurate time records to generate professional time reports for any company process, without wasting your time or putting in any extra effort.</p></div>
-        <div class="box"><img src="/ASSESTS/IMAGES/illustration-assets-team-insights.png"><h2>Performance insights</h2><p>Having your team’s work data provides you with performance insights to assign resources wisely and get the best out of their work, without annoying interruptions and unnecessary friction.</p></div>
+      <div class="maskpng">
+        <img src="/ASSESTS/IMAGES/hero-mask.png">
       </div>
+    </section>
+    <section class="second-section">
+      <div class="content-wrapper">
+        <div class="top-content">
+          <div class="h2"><h2 style="color: white;">PRODUCTIVITY SOFTWARE</h2></div>
+          <div class="h3"><h3 style="font-family: myFont; color: white;">All-In-One Solution for Efficient Teams</h3></div>
+          <div class="p"><p style="color: white;">Manage all your company’s operations. Track time, monitor projects, comply with internal and external<br> requirements, report anything, and more!</p>
+          </div>
+        </div>
+        <div class="bt-content">
+          <div class="p"><p style="color: white; letter-spacing: 5px; text-align: center;">TRUSTED BY COMPANIES OF ALL SHAPES AND SIZES</p>
+          </div>
+        </div>
+        <div class="position-absolute-second-section">
+          <div class="heading-paragraph-section">
+            <div class="content-container">
+              <h2 id="second-section-head" onclick="showParagraph(1)">Time Tracker</h2>
+              <p id="second-section-para" id="paragraph1" class="hidden">Keep track of your team’s work with a time tracking solution that’s suitable for everyone, regardless of their work activities, schedule, location or style.</p>
+          
+              <h2 id="second-section-head" onclick="showParagraph(2)">Project Management</h2>
+              <p id="second-section-para" id="paragraph2" class="hidden">See the big picture and focus on the work that matters. <br> Get a clear overview of progress to stay on top of everything and prioritize tasks.</p>
+          
+              <h2 id="second-section-head" onclick="showParagraph(3)">Timesheets</h2>
+              <p id="second-section-para" id="paragraph3" class="hidden">Online timesheets enable your company to comply with internal processes without having to fill out unnecessary paperwork or process time data manually.</p>
+          
+              <h2 id="second-section-head" onclick="showParagraph(4)">Attendence Tracking</h2>
+              <p id="second-section-para" id="paragraph4" class="hidden">A dynamic and productive team depends on each of their members, so keeping track of their attendance becomes essential to their overall success.</p>
+          
+              <h2 id="second-section-head" onclick="showParagraph(5)">Time Cards</h2>
+              <p id="second-section-para" id="paragraph5" class="hidden">A solution created to comply with legal requirements without any effort. <br> Gather, access, and store accurate employee clock-in/out data smoothly. </p>
+          
+              <h2 id="second-section-head" onclick="showParagraph(6)">Invoice & Time Reporting</h2>
+              <p id="second-section-para" id="paragraph6" class="hidden">Stand out with visually appealing and accurate time reports to share with your clients. Analyze data to set goals and move your business forward.</p>
+            </div>
+          </div>          
+          <div class="carasol-container">
+            <div class="carasol">
+              <div class="slides"><img src="/ASSESTS/IMAGES/website-illustrations-slide-home-time-blocking-1536x895.webp"></div>
+              <div class="slides"><img src="/ASSESTS/IMAGES/website-illustrations-slide-home-project-management-1536x895.webp"></div>
+              <div class="slides"><img src="/ASSESTS/IMAGES/website-illustrations-slide-home-timesheets-1536x895.webp"></div>
+              <div class="slides"><img src="/ASSESTS/IMAGES/website-illustrations-slide-home-attendance-1536x895.webp"></div>
+              <div class="slides"><img src="/ASSESTS/IMAGES/website-illustrations-slide-home-time-cards-1536x895.webp"></div>
+              <div class="slides"><img src="/ASSESTS/IMAGES/website-illustrations-slide-home-time-reporting-1536x795.webp"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="absolute-section">
+      <img src="/ASSESTS/IMAGES/CompanyLogos_SSL.svg" alt="">
+      <img src="/ASSESTS/IMAGES/CompanyLogos_MCI.svg" alt="">
+      <img src="/ASSESTS/IMAGES/CompanyLogos_Moma.svg" alt="">
+      <img src="/ASSESTS/IMAGES/CompanyLogos_OpenStax.svg" alt="">
+      <img src="/ASSESTS/IMAGES/CompanyLogos_Playpass.svg" alt="">
+      <img src="/ASSESTS/IMAGES/CompanyLogos_Smartsheet.svg" alt="">
     </div>
+    <section class="third-section">
+      <div class="content-wrapper">
+        <div class="top-content">
+          <div class="h2"><h2 class="red-para">TIME TRACKING SOFTWARE</h2></div>
+          <div class="h3"><h3 class="headings">A Complete Solution to Boost Team Performance</h3></div>
+          <div class="p"><p class="para">We handle time to help you keep on top of everything. Employees track work according to their style, you gather<br> accurate information and gain valuable insights.</p>
+          </div>
+        </div>
+        <div class="bottom-content">
+          <div class="grid-container">
+            <div class="box">
+              <img src="/ASSESTS/IMAGES/illustration-assets-flexible-time-tracker.png">
+              <h2 class="headings">Flexible time tracker</h2>
+              <p class="para">Every team member can track their work time in a way that fits their style, whether they work at the office, on the field, or at home, part or full time, by the hour or by project.</p>
+            </div>
+            <div class="box">
+              <img src="/ASSESTS/IMAGES/illustration-assets-user-reports.png">
+              <h2 class="headings">Accurate time reports</h2>
+              <p class="para">Seamless time tracking that allows you to gather accurate time records to generate professional time reports for any company process, without wasting your time or putting in any extra effort.</p>
+            </div>
+            <div class="box">
+              <img src="/ASSESTS/IMAGES/illustration-assets-team-insights.png">
+              <h2 class="headings">Performance insights</h2>
+              <p class="para">Having your team’s work data provides you with performance insights to assign resources wisely and get the best out of their work, without annoying interruptions and unnecessary friction.</p>
+            </div>
+          </div>
+        </div>
+        <div class="maskPng">
+          <img class="image" src="/ASSESTS/IMAGES/benefits-mask.webp">
+        </div>
+      </div>
+    </section>
+    <section class="fourth-section">
+      <div class="content-wrapper">
+        <div class="top-content">
+          <div class="h2"><h2 class="red-para">TIMESHEET APP</h2></div>
+          <div class="h3"><h3 class="headings">Streamline Employee Timesheet Workflow</h3></div>
+          <div class="p"><p class="para">Online timesheets enable your company to comply with internal processes without having to fill out unnecessary<br>paperwork or process time data manually.</p></div>
+        </div>
+        <div class="bottom-content-fourth-section">
+          <img src="/ASSESTS/IMAGES/website-illustrations-timesheets.webp">
+        </div>        
+      </div>
+    </section>
+    <section class="fifth-section">
+      <div class="content-wrapper">
+        <div class="top-content">
+          <div class="h2"><h2 class="red-para">INTEGRATIONS</h2></div>
+          <div class="h3"><h3 class="headings">Add Time Tracking to the Apps You Use Every Day</h3></div>
+          <div class="p"><p class="para" id="fifth-section-p">Sync TrackingTime with the tools your team uses every day to fit their work habits. This way, they can keep track<br>of every minute without switching between apps.</p></div>
+          <button class="integrations">Check out +50 integrations <i class="ri-arrow-right-s-line"></i></button>
+        </div>
+        <div class="bottom">
+          <div id="carousel-container">
+            <div id="carousel">
+              <div class="slider">
+                <img src="/ASSESTS/IMAGES/trello.png" alt="Trello">
+                <img src="/ASSESTS/IMAGES/teams.png" alt="Teams">
+                <img src="/ASSESTS/IMAGES/smartsheet.png" alt="Smartsheet">
+                <img src="/ASSESTS/IMAGES/slack.png" alt="Slack">
+                <img src="/ASSESTS/IMAGES/outlook.png" alt="Outlook">
+                <img src="/ASSESTS/IMAGES/microsoft-planner.png" alt="Microsoft Planner">
+              </div>
+              <div class="slider">
+                <img src="/ASSESTS/IMAGES/asana.png" alt="Asana">
+                <img src="/ASSESTS/IMAGES/google-workspace.png" alt="Google Workspace">
+                <img src="/ASSESTS/IMAGES/gsheets.png" alt="Google Sheets">
+                <img src="/ASSESTS/IMAGES/trello.png" alt="Trello">
+                <img src="/ASSESTS/IMAGES/teams.png" alt="Teams">
+                <img src="/ASSESTS/IMAGES/smartsheet.png" alt="Smartsheet">
+              </div>
+            </div>
+            <div id="radiio-buttons">
+              <input type="radio" name="carousel-radio" class="radio-btn" id="radio1" onclick="showSlide(0)" checked>
+              <input type="radio" name="carousel-radio" class="radio-btn" id="radio2" onclick="showSlide(1)">
+            </div>
+          </div>
+        </div>        
+      </div>
+    </section>
+    <section class="sixth-section">
+      <div class="sixth-section-top">
+        <div class="sixth-section-top-left-text-box">
+          <div class="vvv">
+            <div class="carouseel-container">
+              <div class="carouseel">
+                  <div class="slidee">
+                    <img src="/ASSESTS/IMAGES/REMOVE BG.png">
+                    <h2 style="color: white; font-size: 20px; line-height: 1.8; font-weight: 700; margin-bottom: 30px; margin-top: 30px;">﻿
+                      This app is a lifesaver! With TrackingTime, I
+                      can easily set project timelines and track my team's progress. The ability to create detailed timesheets and business reports for clients is a game-changer.
+                    </h2>
+                    <p style="color: white; font-size: 20px;">Frances F. -Project Manager</p>
+                    <h2 style="color: white; font-size: 16px; font-weight: 700;">on nachonacho.com</h2>
+                  </div>
+                  <div class="slidee">
+                    <img src="/ASSESTS/IMAGES/REMOVE BG.png">
+                    <h2 style="color: white; font-size: 20px; line-height: 1.8; font-weight: 700; margin-bottom: 30px; margin-top: 30px;">﻿
+                      TrackingTime was incredibly convenient to
+                      use; its simple design made it accessible to anyone. The features were outstanding and the reports provided invaluable insights into my own productivity.
+                    </h2>
+                    <p style="color: white; font-size: 20px;">Emmanuella - Sonographer</p>
+                    <h2 style="color: white; font-size: 16px; font-weight: 700;">on capterra.com</h2>
+                  </div>
+                  <div class="slidee">
+                    <img src="/ASSESTS/IMAGES/REMOVE BG.png">
+                    <h2 style="color: white; font-size: 20px; line-height: 1.8; font-weight: 700; margin-bottom: 30px; margin-top: 100px;">﻿
+                      Tracking Time keeps my team and projects on track. Saves us hours of headaches and facilitates working remotely. Top notch.
+                    </h2>
+                    <p style="color: white; font-size: 20px;">Anne S. -CEO</p>
+                    <h2 style="color: white; font-size: 16px; font-weight: 700;">on nachonacho.com</h2>
+                  </div>
+              </div>
+              <div class="sixth-section-radio-container">
+                <input type="radio" id="sixth-section-radio">
+                <input type="radio" id="sixth-section-radio">
+                <input type="radio" id="sixth-section-radio">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sixth-section-top-right-text-box">
+          <h2 class="red-para" style="font-size: 14px; margin-top: 150px; margin-bottom: 10px;">TESTIMONIALS - GREAT REVIEWS</h2>
+          <h3 class="headings" style="font-size: 40px; margin-bottom: 10px;">Trusted by All Kinds of Clients</h3>
+          <p class="para" style="line-height: 1.5; font-weight: 500;">We believe that our clients' success is our success, and we are committed to doing everything<br>we can to help them achieve their goals. We're proud to assist them with their daily struggles<br>to improve their workdays, and we appreciate their positive feedback.</p>
+        </div>
+      </div>
+      <div class="sixth-section-bottom-carousel">
+        <div class="carasil-container">
+          <div class="carasil">
+            <div class="sliide">
+              <img src="/ASSESTS/New folder/TimeTracking_HighPerformer_Americas_HighPerformer.png" alt="">
+              <img src="/ASSESTS/New folder/TimeTracking_HighPerformer_EMEA_HighPerformer.png" alt="">
+              <img src="/ASSESTS/New folder/TimeTracking_HighPerformer_HighPerformer.png" alt="">
+              <img src="/ASSESTS/New folder/TimeTracking_HighPerformer_Small-Business_Americas_HighPerformer.png" alt="">
+              <img src="/ASSESTS/New folder/TimeTracking_HighPerformer_Small-Business_EMEA_HighPerformer.png" alt="">
+              <img src="/ASSESTS/New folder/TimeTracking_HighPerformer_Small-Business_Europe_HighPerformer.png" alt="">
+              <img src="/ASSESTS/New folder/TimeTracking_HighPerformer_Small-Business_HighPerformer.png" alt="">
+              <img src="/ASSESTS/New folder/TimeTracking_HighPerformer_Spring2.png" alt="">
+            </div>
+            <div class="sliide">
+              <img src="/ASSESTS/New folder/TimeTracking_Leader_Leader.png" alt="">
+              <img src="/ASSESTS/New folder/TimeTracking_MomentumLeader_Leader.png" alt="">
+              <img src="/ASSESTS/New folder/TimeTracking_HighPerformer_Americas_HighPerformer.png" alt="">
+              <img src="/ASSESTS/New folder/TimeTracking_HighPerformer_EMEA_HighPerformer.png" alt="">
+              <img src="/ASSESTS/New folder/TimeTracking_HighPerformer_HighPerformer.png" alt="">
+              <img src="/ASSESTS/New folder/TimeTracking_HighPerformer_Small-Business_Americas_HighPerformer.png" alt="">
+              <img src="/ASSESTS/New folder/TimeTracking_HighPerformer_Small-Business_EMEA_HighPerformer.png" alt="">
+              <img src="/ASSESTS/New folder/TimeTracking_HighPerformer_Small-Business_Europe_HighPerformer.png" alt="">
+            </div>
+          </div>
+          <div class="sixth-section-radio-bottom-container">
+            <input type="radio" id="radio1">
+            <input type="radio" id="radio2">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="seventh-section">
+      <div class="content-wrapper">
+        <div class="seventh-section-top">
+          <div class="h2" id="seventh-section-h2"><h2 class="red-para">TIME TRACKING SOFTWARE</h2></div>
+          <div class="h3" id="seventh-section-h3"><h3 class="headings">Track Time, Not People</h3></div>         
+        </div>
+        <div class="seventh-section-bottom">
+          <div class="row-container">
+            <div class="seventh-section-row-container-box">
+              <div class="seventh-section-row-container-image-box"><img src="https://trackingtime.co/wp-content/uploads/2023/03/website-icons-timesheets-white.svg" alt=""></div>
+              <h2 class="seventh-section-h2">Timesheets</h2>
+              <p class="seventh-section-p">Comply with internal processes without having to fill out unnecessary paperwork or process time data manually</p>
+              <span class="seventh-section-span">More on Employee Timesheets <i class="ri-arrow-right-s-line"></i></span>
+            </div>
+            <div class="seventh-section-row-container-box">
+              <div class="seventh-section-row-container-image-box"><img src="https://trackingtime.co/wp-content/uploads/2020/05/website-icons-list-row-white.svg"></div>
+              <h2 class="seventh-section-h2">Project Tracking</h2>
+              <p class="seventh-section-p">Stay on top each project and visualize progress in the way that works best for you. Allocate time and resources wisely to hit deadlines</p>
+              <span class="seventh-section-span">More on Project Management <i class="ri-arrow-right-s-line"></i></span>
+            </div>
+            <div class="seventh-section-row-container-box">
+              <div class="seventh-section-row-container-image-box"><img src="https://trackingtime.co/wp-content/uploads/2023/03/website-icons-target-white.svg"></div>
+              <h2 class="seventh-section-h2">Buisness Reporting</h2>
+              <p class="seventh-section-p">Gather accurate and detailed time data and obtain professional branded reports to share with clients and support internal processes.</p>
+              <span class="seventh-section-span">More on Time Reports <i class="ri-arrow-right-s-line"></i></span>
+            </div>
+          </div>
+          <div class="seventh-section-bottom-illustration">
+            <img src="/ASSESTS/IMAGES/vector-background-emma.webp">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="eighth-section">
+      <div class="content-wrapper">
+        <div class="eight-section-container">
+          <h2 class="headings">Unleash Team Productivity</h2>
+          <h2 class="headings">with Automatic Time Tracking</h2>
+          <button class="getStarted-btn">Get started <img src="/ASSESTS/IMAGES/arrow.svg"></button>
+          <div class="countinueWithGoogle-btn"><img src="/ASSESTS/IMAGES/google-workspace.png" alt="google-logo">Sign in with Google</div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="content-wrapper">
+        <div class="top-footer">
+          <div class="top-left-footer">
+            <div class="logo">
+              <img src="/ASSESTS/IMAGES/logo-full-white.svg" alt="">
+              <p>&copy; 2023 TrackingTime, LLC</p>
+            </div>
+          </div>
+          <div class="top-right-footer">
+            <section class="apps">
+              <h2>Apps</h2>
+              <ul>
+                  <li>Web App</li>
+                  <li>Time Tracker App for Mac</li>
+                  <li>Time Tracker for Windows</li>
+                  <li>iPhone App</li>
+                  <li>Android App</li>
+                  <li>Time Tracking for Chrome</li>
+                  <li>Time Tracking for Firefox</li>
+                  <li>Time Tracking for Safari</li>
+              </ul>
+            </section>
+            <section class="industries">
+              <h2>Industries</h2>
+              <ul>
+                  <li>Time Tracking for Graphic Designers</li>
+                  <li>Time Tracking Software for Architects</li>
+                  <li>Time Tracking for Remote Workers</li>
+                  <li>Time Tracking for Marketing Teams</li>
+                  <li>Time Tracking for Freelancers</li>
+                  <li>Time Tracking for Consultants</li>
+                  <li>Time Logging for Developers and Programmers</li>
+              </ul>
+            </section>
+            <section class="competitors">
+              <h2>Competitors</h2>
+              <ul>
+                  <li>Toggl vs TrackingTime</li>
+                  <li>Clockify vs TrackingTime</li>
+                  <li>Timely vs TrackingTime</li>
+                  <li>Everhour vs TrackingTime</li>
+                  <li>Timecamp vs TrackingTime</li>
+                  <li>Hubstaff vs TrackingTime</li>
+              </ul>
+            </section>
+            <section class="language">
+              <h2>Language</h2>
+              <ul>
+                  <li>English</li>
+                  <li>Deutsch</li>
+                  <li>Español</li>
+                  <li>Português</li>
+                  <li>Français</li>
+                  <li>Nederlands</li>
+                  <li>Italiano</li>
+                  <li>日本語</li>
+                  <li>Polski</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+        <div class="bottom-footer">
+          <div class="bottom-left-footer">
+            <section class="features">
+              <h2>Features</h2>
+              <ul>
+                  <li>Online Timesheet for Efficient Companies</li>
+                  <li>Time Tracker for Every Business</li>
+                  <li>Reports for Billing and Payroll</li>
+                  <li>Attendance Tracker for Every Business</li>
+                  <li>Project Management Time Tracking Software</li>
+                  <li>Time Cards to Track Your Employees’ Hours</li>
+              </ul>
+            </section>
+          </div>
+          <div class="bottom-right-footer">
+            <section class="company">
+              <h2>Company</h2>
+              <ul>
+                  <li>About Us</li>
+                  <li>Blog</li>
+                  <li>Media Kit</li>
+                  <li>DMCA Policy</li>
+                  <li>Impressum</li>
+              </ul>
+            </section>
+            <section class="help-support">
+              <h2>Help & Support</h2>
+              <ul>
+                  <li>Help Center</li>
+                  <li>Developers</li>
+                  <li>Contact Us</li>
+              </ul>
+            </section>
+            <section class="product">
+              <h2>Product</h2>
+              <ul>
+                  <li>Plans & Pricing</li>
+                  <li>Integrations</li>
+                  <li>Product Updates</li>
+                  <li>Slack Bot</li>
+                  <li>Microsoft Teams</li>
+                  <li>Twitter</li>
+                  <li>Instagram</li>
+                  <li>Linkedin</li>
+                  <li>Facebook</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
+
+  <script src="/JS FILES/HOMEPAGE.JS"></script>
 </body>
 </html>
